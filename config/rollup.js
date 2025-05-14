@@ -1,5 +1,5 @@
 import { readFileSync } from "fs";
-import bable from "rollup-plugin-babel";
+import bable from "@rollup/plugin-babel";
 import json from "@rollup/plugin-json";
 
 const pkg = JSON.parse(
@@ -40,7 +40,7 @@ export const getCompiler = () => {
         ],
       ],
       exclude: "node_modules/**",
-      runtimeHelpers: "runtime",
+      babelHelpers: "runtime",
     }),
   ];
 };
@@ -49,7 +49,7 @@ export const pkgName = "rollupTest";
 
 /**
  * 相关依赖
- * rollup-plugin-babel
+ * rollup-plugin-babel -> @rollup/plugin-babel
  * @babel/preset-env
  * @babel/plugin-transform-runtime
  * @babel/core
