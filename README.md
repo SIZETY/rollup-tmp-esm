@@ -5,12 +5,11 @@
 esmodule 无法用 import 导入 .json 文件，rollup 中可以用 `@rollup/plugin-json` 插件解决
 
 ```js
-import json from "@rollup/plugin-json";
+import json from '@rollup/plugin-json'
 
 const pkg = JSON.parse(
-  readFileSync(new URL("../package.json", import.meta.url), "utf8")
-);
-
+	readFileSync(new URL('../package.json', import.meta.url), 'utf8')
+)
 ```
 
 ---
@@ -19,7 +18,7 @@ const pkg = JSON.parse(
 
 ```json
 {
-  "type": "commonjs",
+	"type": "commonjs"
 }
 ```
 
