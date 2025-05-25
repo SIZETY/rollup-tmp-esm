@@ -27,3 +27,4 @@ pnpm-debug.log*
 !gemoo-guide.mp4
 
 *.copy.*
+.eslintcache
